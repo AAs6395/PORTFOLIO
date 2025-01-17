@@ -1,0 +1,134 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+ol {
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+ol li {
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+ol li:hover {
+    background-color: #f1f1f1;
+}
+
+ol li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+ol li a:hover {
+    color: #0056b3;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* Full height page layout */
+html, body {
+    height: 100%;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
